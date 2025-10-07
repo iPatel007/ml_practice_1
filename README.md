@@ -12,7 +12,7 @@
 🚀 Easy to Use: Simple two-page navigation with intuitive interface
 
 
-ml-prediction-app/
+[ml-prediction-app/
 │
 ├── app.py                 # Main Flask application
 ├── requirements.txt       # Python dependencies
@@ -28,3 +28,4 @@ ml-prediction-app/
 │
 └── static/              # Static assets (CSS, JS, images)
     └── style.css        # Custom styles (if any)
+](url)
