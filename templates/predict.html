@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Prediction Page</title>
+</head>
+<body>
+    <h1>
+    This is my prediction page <p>{{ myName }}</p>
+    </h1>
+    <br>
+    <form action="{{ url_for('predict_result') }}" method="POST">
+        <label for="Temperature">Enter Temperature:</label>
+        <input type="text" id="temperature" name="temperature"><br><br>
+   
+        <label for="RH">Enter RH:</label>
+        <input type="text" id="RH" name="RH", required="required"><br><br>
+        
+        <label for="Ws">Enter Ws:</label>
+        <input type="text" id="Ws" name="Ws", required="required"><br><br>
+        
+        <label for="Rain">Enter Rain:</label>
+        <input type="text" id="Rain" name="Rain", required="required"><br><br>
+        
+        <label for="FFMC">Enter FFMC:</label>
+        <input type="text" id="FFMC" name="FFMC", required="required"><br><br>
+        
+        <label for="DMC">Enter DMC:</label>
+        <input type="text" id="DMC" name="DMC", required="required"><br><br>
+        
+        <label for="ISI">Enter ISI:</label>
+        <input type="text" id="ISI" name="ISI", required="required"><br><br>
+        
+        <label for="Classes">Enter Classes:</label>
+        <input type="text" id="Classes" name="Classes"><br><br>
+        
+        <label for="region">Enter region:</label>
+        <input type="text" id="region" name="region"><br><br>
+        
+        <button type="submit">Predict Result</button>
+    </form>
+
+    <h1>
+        predict is : {{ model_prediction }}
+    </h1>
+
+
+</body>
+</html>
+
+<!--
+Temperature  RH  Ws  Rain  FFMC   DMC  ISI  Classes  region
+-->

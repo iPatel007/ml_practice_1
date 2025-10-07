@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcom Page</title>
+</head>
+<body>
+    <h1>
+    Hello World - This is my index page.
+    </h1>
+
+    <br>
+    <form action="{{ url_for('predictdata') }}" method="POST">
+        <label for="Name">Enter Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <button type="submit">Press to predict page</button>
+    </form>
+</body>
+</html>
